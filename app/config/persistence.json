@@ -1,0 +1,51 @@
+{
+  "uuSubAppDataStore": {
+    "primary": {
+      "type": "uuAppObjectStore",
+      "realization": "MongoDB",
+      "schemaMap": {
+        "schoolkitMain": {
+          "realization": "dao/SchoolkitMainMongo",
+          "maxNoi": 1
+        },
+        "schoolYear": {
+          "realization": "dao/SchoolYearMongo",
+          "maxNoi": 1000
+        },
+        "class": {
+          "realization": "dao/ClassMongo",
+          "maxNoi": 1000
+        },
+        "subject": {
+          "realization": "dao/SubjectMongo",
+          "maxNoi": 1000
+        },
+        "teacher": {
+          "realization": "dao/TeacherMongo",
+          "maxNoi": 1000
+        },
+        "relatedPerson": {
+          "realization": "dao/RelatedPersonMongo",
+          "maxNoi": 10000
+        },
+        "student": {
+          "realization": "dao/StudentMongo",
+          "maxNoi": 10000
+        },
+        "assignment": {
+          "realization": "dao/AssignmentMongo",
+          "maxNoi": 10000
+        }
+      },
+      "binary": {
+        "type": "uuAppBinaryStore",
+        "realization": "MongoDB",
+        "schemaMap": {
+          "uuBinary": {
+            "realization": "uu_appg01_binarystore-cmd:dao/UuAppBinarystoreMongo"
+          }
+        }
+      }
+    }
+  }
+}

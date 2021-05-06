@@ -1,0 +1,102 @@
+{
+  "about": {
+    "creators": {
+      "leadingCreators": [
+        {
+          "name": "Vladimír Kovář",
+          "uuIdentity": "1-1",
+          "role": {
+            "en": "Chief Stakeholder, Business & Software Architect"
+          }
+        },
+        {
+          "name": "Marek Beránek",
+          "uuIdentity": "6-11-1",
+          "role": {
+            "en": "Product Manager & Author"
+          }
+        },
+        {
+          "name": "Zuzana Líznerová",
+          "uuIdentity": "3047-1",
+          "role": {
+            "en": "Author"
+          }
+        },
+        {
+          "name": "Jakub Trizna",
+          "uuIdentity": "11-9524-1",
+          "role": {
+            "en": "Project Supervisor"
+          }
+        },
+        {
+          "name": "Michal Zajac",
+          "uuIdentity": "84-1",
+          "role": {
+            "en": "Project Supervisor"
+          }
+        }
+      ],
+      "otherCreators": [
+        {
+          "name": "Ivan Kseňak",
+          "uuIdentity": "8445-9217-1",
+          "role": {
+            "en": "Team Leader & Designer"
+          }
+        },
+        {
+          "name": "Patrik Bašista",
+          "uuIdentity": "22-8939-1",
+          "role": {
+            "en": "Developer"
+          }
+        },
+        {
+          "name": "Branislav Dolny",
+          "uuIdentity": "13-2838-1",
+          "role": {
+            "en": "Developer"
+          }
+        },
+        {
+          "name": "Maroš Jakubčo",
+          "uuIdentity": "22-9196-1",
+          "role": {
+            "en": "Developer"
+          }
+        }
+      ]
+    },
+    "usedTechnologies": {
+      "technologies": {
+        "en": [
+          "<UU5.Bricks.LinkUAF key=\",LinkUAF\", />",
+          "<UU5.Bricks.LinkUU5 key=\",LinkUU5\", />",
+          "<UU5.Bricks.LinkUuPlus4U5 key=\",LinkUuPlus4U5\", />",
+          "<UU5.Bricks.LinkUuAppServer key=\",LinkUuAppServer\", />"
+        ]
+      },
+      "content": {
+        "en": [
+          "<uu5string/>Other used technologies:<UU5.Bricks.LinkHTML5>Html5</UU5.Bricks.LinkHTML5>, <UU5.Bricks.LinkCSS>CSS</UU5.Bricks.LinkCSS>, <UU5.Bricks.LinkJavaScript>JavaScript</UU5.Bricks.LinkJavaScript>, <UU5.Bricks.LinkReact>React</UU5.Bricks.LinkReact>, <UU5.Bricks.LinkRuby>Ruby</UU5.Bricks.LinkRuby>, <UU5.Bricks.LinkPuma>Puma</UU5.Bricks.LinkPuma>, <UU5.Bricks.LinkDocker>Docker</UU5.Bricks.LinkDocker>",
+          "Application is operated in the Plus4U internet service with the usage of Microsoft Azure cloud."
+        ]
+      }
+    }
+  },
+  "productInfo": {
+    "name": {
+      "en": "uuSchoolKit"
+    },
+    "description": {
+      "en": "uuSchoolKit is an online register of basic school objects - school, class, subject, teacher, student and their related persons (legal guardians). Students can get the Assignments connected to the subject from their subject teacher through this application. The assignments are usually connected to (associated with) other applications, e.g. uuCourseKit and uuBookKit. Typical Assignment can be: \"Read pages 1-15 from uuBook and Study Lesson 1-3 from the uuCourse.\" The results are passed to uuSchoolKit and evaluated. The application uuSchoolKit is only one part of the whole school information system. Besides uuSchoolKit, there can also be uuFinman, the system for managing school finance or many others."
+    }
+  },
+  "productLogo": {
+    "appSchema": "schoolkitMain",
+    "appActiveState": "active",
+    "appIsMultiAwid": true
+  }
+}

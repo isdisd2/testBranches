@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "schemaSpecificationUri": "https://uuos9.plus4u.net/uu-bookkitg01-main/78462435-289fcd2e11d34f3e9b2184bedb236ded/book/page?code=uuSubAppInstanceDescriptor",
+  "uuSubApp": {
+    "code": "UU.SCHOOLKIT.SCHOOLG01",
+    "version": "0.20.4-beta",
+    "name": "uuSchoolkitSchoolg01",
+    "description": "",
+    "license": "License Commercial",
+    "asidRequired": true,
+    "awidCount": 1,
+    "resourcePoolUri": "ues:EDUCATIONUUAPPS-BT:FAMILY_EDUCATION_FAT_RESOURCEPOOL_AWE",
+    "uuAppNodeSetMap": {
+      "CMD": {
+        "nodeSize": "G1_S",
+        "nodeCount": {
+          "min": 1,
+          "max": 1
+        },
+        "appPackUri": "ues:UU-BT:UU.SCHOOLKIT.SCHOOLG01/APPBOX-0.20.4-beta:UU.SCHOOLKIT.SCHOOLG01/CMD-PACK",
+        "runtimeStack": "UU.APPG01/APPSERVER_NODEJS_STACK-1.4"
+      }
+    },
+    "uuAppObjectStoreMap": {
+      "OSID_1": {
+        "technology": "MongoDB-4.0",
+        "size": 0.25,
+        "backup": false,
+        "alias": "primary"
+      }
+    },
+    "uuAppBinaryStoreMap": {
+      "BSID_1": {
+        "technology": "MongoDB-4.0",
+        "size": 0.5,
+        "backup": false,
+        "alias": "binary"
+      }
+    },
+    "uuConfigMap": {
+      "uuScriptUri": "https://uuapp.plus4u.net/uu-bookkit-maing01/8aea1851a69a4e5e8b56972d4768e7a8/getBinaryData?code=scriptCreateFolders",
+      "uuScriptSetPermissionsUri": "https://uuapp.plus4u.net/uu-bookkit-maing01/8aea1851a69a4e5e8b56972d4768e7a8/getBinaryData?code=uuSchoolKitSetUnitPermissions",
+      "uuScriptRegisterStudentToCourse": "https://uuapp.plus4u.net/uu-bookkit-maing01/8aea1851a69a4e5e8b56972d4768e7a8/getBinaryData?code=uu_ck_integration_add_students",
+      "uuScriptUnregisterStudentFro0mCourse": "https://uuapp.plus4u.net/uu-bookkit-maing01/8aea1851a69a4e5e8b56972d4768e7a8/getBinaryData?code=uu_ck_integration_remove_students",
+      "uuScriptUpdateRelatedPersonInCourse": "https://uuapp.plus4u.net/uu-bookkit-maing01/8aea1851a69a4e5e8b56972d4768e7a8/getBinaryData?code=uu_ck_integration_update_related_person",
+      "uuScriptGetAssignmentsLogs": "https://uuapp.plus4u.net/uu-bookkit-maing01/8aea1851a69a4e5e8b56972d4768e7a8/getBinaryData?code=uu_ck_integration_get_logs",
+      "uu_app_oidc_providers_oidcg02_enabled": true,
+      "uu_app_oidc_primary_provider": "oidcg02",
+      "asid_license_owner_list": [
+        "25-6454-1"
+      ]
+    }
+  },
+  "uuSubAppInstance": {
+    "asid": "0bb8e0f8ecb04f6fad9032ec6ef38b50",
+    "asidOwner": "25-6454-1",
+    "awidList": [
+      {
+        "awid": "6a23b45f55da45aea237354b5774a3fc",
+        "awidOwner": "25-6517-1"
+      },
+      {
+        "awid": "d06059ef569041cb872201c5b2cf35a3"
+      },
+      {
+        "awid": "cb592ccdd6f545bf91ca78d2b92f3675"
+      },
+      {
+        "awid": "2f344e9830584490a6e9feb48dfc9d8d",
+        "awidOwner": "26-4266-1"
+      }
+    ],
+    "uuEeMap": {},
+    "uuAppObjectStoreMap": {
+      "OSID_1": {
+        "osid": "31b3614bf2924527bf6863c99665c7f0"
+      }
+    },
+    "uuAppBinaryStoreMap": {
+      "BSID_1": {
+        "bsid": "f1c8ae3a6a47451ea243e092617d441a"
+      }
+    }
+  }
+}

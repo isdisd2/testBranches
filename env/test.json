@@ -1,0 +1,63 @@
+{
+  "asid": "11111111111111111111111111111111",
+  "sysUuAppWorkspace": {
+    "awid": "22222222222222222222222222222222",
+    "awidLicense": "xs",
+    "awidLicenseOwnerList": [
+      "14-2710-1"
+    ]
+  },
+  "userMap": {
+    "StandardUsers": {
+      "accessCode1": "3yMhD1qzi0JUwsAJ7UOsWX2YtrGH_Olk5DxgWyssNW6e_WC4wjKrXODHES92cQXp",
+      "accessCode2": "Cq%iaz#9w-#z7C8yZlZoC$DsebIK2JGWyDK8lg8J7vLFSKXtYFt5tn3eI3WthZtI",
+      "uuIdentity": "14-2710-1",
+      "profileList": [
+        "StandardUsers"
+      ]
+    },
+    "StandardUser": {
+      "accessCode1": "snape",
+      "accessCode2": "severus4321",
+      "uuIdentity": "12-7120-1",
+      "profileList": [
+        "StandardUsers"
+      ]
+    },
+    "Authorities": {
+      "accessCode1": "3yMhD1qzi0JUwsAJ7UOsWX2YtrGH_Olk5DxgWyssNW6e_WC4wjKrXODHES92cQXp",
+      "accessCode2": "Cq%iaz#9w-#z7C8yZlZoC$DsebIK2JGWyDK8lg8J7vLFSKXtYFt5tn3eI3WthZtI",
+      "uuIdentity": "14-2710-1",
+      "profileList": ["Authorities", "Executives"]
+    },
+    "AsidAuthorities": {
+      "accessCode1": "3yMhD1qzi0JUwsAJ7UOsWX2YtrGH_Olk5DxgWyssNW6e_WC4wjKrXODHES92cQXp",
+      "accessCode2": "Cq%iaz#9w-#z7C8yZlZoC$DsebIK2JGWyDK8lg8J7vLFSKXtYFt5tn3eI3WthZtI",
+      "uuIdentity": "14-2710-1",
+      "profileList": [
+        "AsidAuthorities"
+      ]
+    },
+    "AsidLicenseOwner": {
+      "accessCode1": "3yMhD1qzi0JUwsAJ7UOsWX2YtrGH_Olk5DxgWyssNW6e_WC4wjKrXODHES92cQXp",
+      "accessCode2": "Cq%iaz#9w-#z7C8yZlZoC$DsebIK2JGWyDK8lg8J7vLFSKXtYFt5tn3eI3WthZtI",
+      "uuIdentity": "14-2710-1",
+      "profileList": [
+        "AsidLicenseOwner"
+      ]
+    },
+    "AwidLicenseOwner": {
+      "accessCode1": "3yMhD1qzi0JUwsAJ7UOsWX2YtrGH_Olk5DxgWyssNW6e_WC4wjKrXODHES92cQXp",
+      "accessCode2": "Cq%iaz#9w-#z7C8yZlZoC$DsebIK2JGWyDK8lg8J7vLFSKXtYFt5tn3eI3WthZtI",
+      "uuIdentity": "14-2710-1",
+      "profileList": ["Authorities", "Executives"]
+    }
+  },
+  "log_level": "FATAL",
+  "uuapp.appserver.monitoring.accesslog.log_level": "OFF",
+  "uuapp.perflog.logger.log_level": "OFF",
+  "embeddedMongoDbVersion": "4.0.19",
+  "asid_license_owner_list": [
+    "14-2710-1"
+  ]
+}

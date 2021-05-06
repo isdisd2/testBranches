@@ -1,0 +1,428 @@
+{
+  "{asid}": {
+    "profileList": ["AsidAuthorities","AsidExecutives","AsidAuditors","AsidLicenseOwner"],
+    "useCaseMap": {
+      "sys/uuSubAppInstance/init": {
+        "sysStateList": ["created"],
+        "profileList": ["AsidLicenseOwner"]
+      },
+      "sys/uuSubAppInstance/get": {
+        "sysStateList": ["restricted","active"],
+        "profileList": ["AsidAuthorities","AsidExecutives","AsidAuditors"]
+      },
+      "sys/uuAppWorkspace/create": {
+        "sysStateList": ["active","restricted"],
+        "profileList": ["AsidAuthorities"]
+      },
+      "sys/uuSubAppInstance/dump": {
+        "sysStateList": ["restricted"],
+        "profileList": ["AsidAuthorities"]
+      },
+      "sys/uuSubAppInstance/restore": {
+        "sysStateList": ["restricted"],
+        "profileList": ["AsidAuthorities"]
+      }
+    }
+  },
+  "*": {
+    "profileList": ["Authorities","Executives","StandardUsers","Auditors","AwidLicenseOwner","Public"],
+    "useCaseMap": {
+      "uuSchoolKit/get": {
+        "profileList": ["Authorities","Executives","StandardUsers","Auditors"],
+        "sysStateList": ["active"]
+      },
+      "uuSchoolKit/load": {
+        "profileList": ["Authorities","Executives","StandardUsers","Auditors"],
+        "sysStateList": ["active"]
+      },
+      "uuSchoolKit/update": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "uuSchoolKit/setState": {
+        "profileList": ["Authorities"],
+        "sysStateList": ["active"]
+      },
+      "schoolYear/create": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "schoolYear/get": {
+        "profileList": ["Authorities","Executives","Auditors","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "schoolYear/load": {
+        "profileList": ["Authorities","Executives","StandardUsers","Auditors"],
+        "sysStateList": ["active"]
+      },
+      "schoolYear/list": {
+        "profileList": ["Authorities","Executives","Auditors"],
+        "sysStateList": ["active"]
+      },
+      "schoolYear/update": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "schoolYear/setState": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "schoolYear/setFinalState": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "schoolYear/delete": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "class/create": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "class/update": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "class/updateByClassTeacher": {
+        "profileList": ["StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "class/addStudents": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "class/removeStudent": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "class/listBySchoolYear": {
+        "profileList": ["Authorities","Executives","Auditors"],
+        "sysStateList": ["active"]
+      },
+      "class/listByTeacher": {
+        "profileList": ["Authorities","Executives","Auditors","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "class/listByStudent": {
+        "profileList": ["Authorities","Executives","Auditors","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "class/load": {
+        "profileList": ["Authorities","Executives","StandardUsers","Auditors"],
+        "sysStateList": ["active"]
+      },
+      "class/get": {
+        "profileList": ["Authorities","Executives","Auditors","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "class/delete": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "class/setState": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "class/setFinalState": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "defaultUve": {
+        "profileList": ["Public"],
+        "sysStateList": ["active"]
+      },
+      "setProductLogo": {
+        "profileList": ["Authorities"],
+        "sysStateList": ["active"]
+      },
+      "getProductLogo": {
+        "profileList": ["Public"],
+        "sysStateList": ["active"]
+      },
+      "getProductInfo": {
+        "profileList": ["Public"],
+        "sysStateList": ["active"]
+      },
+      "getAboutInfo": {
+        "profileList": ["Public"],
+        "sysStateList": ["active"]
+      },
+      "subject/create": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "subject/load": {
+        "profileList": ["Authorities","Executives","StandardUsers","Auditors"],
+        "sysStateList": ["active"]
+      },
+      "subject/update": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "subject/updateBySubjectTeacher": {
+        "profileList": ["StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "subject/addStudents": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "subject/removeStudent": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "subject/delete": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "subject/get": {
+        "profileList": ["Authorities","Executives","Auditors","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "subject/listByClass": {
+        "profileList": ["Authorities","Executives","Auditors","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "subject/listByTeacher": {
+        "profileList": ["Authorities","Executives","Auditors","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "subject/listByStudent": {
+        "profileList": ["Authorities","Executives","Auditors","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "subject/setState": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "subject/setFinalState": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "teacher/create": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "teacher/get": {
+        "profileList": ["Authorities","Executives","Auditors"],
+        "sysStateList": ["active"]
+      },
+      "teacher/load": {
+        "profileList": ["Authorities","Executives","StandardUsers","Auditors"],
+        "sysStateList": ["active"]
+      },
+      "teacher/list": {
+        "profileList": ["Authorities","Executives","Auditors","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "teacher/update": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "teacher/setState": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "teacher/setFinalState": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "relatedPerson/create": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "relatedPerson/load": {
+        "profileList": ["Authorities","Executives","StandardUsers","Auditors"],
+        "sysStateList": ["active"]
+      },
+      "relatedPerson/get": {
+        "profileList": ["Authorities","Executives","Auditors"],
+        "sysStateList": ["active"]
+      },
+      "relatedPerson/list": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "relatedPerson/setState": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "relatedPerson/setFinalState": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "relatedPerson/update": {
+        "profileList": ["Authorities","Executives","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "relatedPerson/updateByRelatedPerson": {
+        "profileList": ["StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "student/create": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "student/load": {
+        "profileList": ["Authorities","Executives","Auditors","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "student/update": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "student/updateByRelatedPerson": {
+        "profileList": ["StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "student/setEvaluation": {
+        "profileList": ["StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "student/setNickname": {
+        "profileList": ["Authorities","Executives","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "student/get": {
+        "profileList": ["Authorities","Executives","Auditors"],
+        "sysStateList": ["active"]
+      },
+      "student/setState": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "student/setFinalState": {
+        "profileList": ["Authorities","Executives"],
+        "sysStateList": ["active"]
+      },
+      "student/list": {
+        "profileList": ["Authorities","Executives","Auditors","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "student/listByRelatedPerson": {
+        "profileList": ["Authorities","Executives","Auditors","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "student/addRelatedPersons": {
+        "profileList": ["Authorities","Executives","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "student/removeRelatedPerson": {
+        "profileList": ["Authorities","Executives","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "uuSchoolKit/migrate": {
+        "profileList": ["AwidLicenseOwner","Authorities"],
+        "sysStateList": ["active"]
+      },
+      "uuSchoolKit/updateIndexes": {
+        "profileList": ["AwidLicenseOwner","Authorities"],
+        "sysStateList": ["active"]
+      },
+      "uuSchoolKit/deleteAwsc": {
+        "profileList": ["AwidLicenseOwner","Authorities"],
+        "sysStateList": ["active"]
+      },
+      "uuSchoolKit/dropAwid": {
+        "profileList": ["AwidLicenseOwner","Authorities"],
+        "sysStateList": ["active"]
+      },
+      "student/updateRelationType": {
+        "profileList": ["Executives","Authorities","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "student/updateNote": {
+        "profileList": ["Executives","Authorities","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "student/setRelatedPerson": {
+        "profileList": ["Authorities","Executives","StandardUsers"],
+        "sysStateList": ["active"]
+      },
+      "sys/uuAppWorkspace/init": {
+        "profileList": ["AwidLicenseOwner"],
+        "sysStateList": ["created","active"]
+      },
+      "sys/uuAppWorkspace/create": {
+        "profileList": ["AwidLicenseOwner"],
+        "sysStateList": ["created","active"]
+      },
+      "sys/uuAppWorkspace/setActiveSysState": {
+        "sysStateList": ["readOnly","restricted","created"],
+        "profileList": ["AwidLicenseOwner","Authorities","Executives"]
+      },
+      "subject/addStudentCourse": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "subject/addCourse": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "subject/removeCourse": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "subject/removeStudentCourse": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "class/updateNumberInClass": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "assignment/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "assignment/load": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "assignment/addTask": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "assignment/updateTask": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "assignment/removeTask": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "assignment/get": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","Auditors","StandardUsers"]
+      },
+      "assignment/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "assignment/update": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "assignment/setFinalState": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "assignment/setState": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "assignment/addStudents": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "assignment/removeStudent": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","StandardUsers"]
+      },
+      "assignment/getLogs": {
+        "sysStateList": ["active"],
+        "profileList": ["Executives","Authorities","StandardUsers"]
+      }
+    }
+  }
+}

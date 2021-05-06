@@ -1,0 +1,25 @@
+{
+  "port": 8080,
+  "uuSubAppDataStoreMap": {
+    "primary": "mongodb://127.0.0.1:27017/schoolkitMainPrimary",
+    "binary": "mongodb://127.0.0.1:27017/schoolkitMainBinary"
+  },
+  "asid": "11111111111111111111111111111111",
+  "log_level": "INFO",
+  "uu_app_oidc_providers_oidcg02_enabled": true,
+  "uu_app_oidc_primary_provider": "oidcg02",
+  "uuScriptUri": "http://localhost:3000/uu-fakerepo-maing01/00000000000000000000000000000000/getBinaryData?code=folderCreate",
+  "uuScriptSetPermissionsUri": "http://localhost:3000/uu-fakerepo-maing01/00000000000000000000000000000000/getBinaryData?code=unitPermission",
+  "uuScriptRegisterStudentToCourse": "http://localhost:3000/uu-fakerepo-maing01/00000000000000000000000000000000/getBinaryData?code=ckIntegration",
+  "uuScriptUnregisterStudentFromCourse": "http://localhost:3000/uu-fakerepo-maing01/00000000000000000000000000000000/getBinaryData?code=ckRemove",
+  "uuScriptUpdateRelatedPersonInCourse": "http://localhost:3000/uu-fakerepo-maing01/00000000000000000000000000000000/getBinaryData?code=ckUpdateRelatedPerson",
+  "uuScriptGetAssignmentsLogs": "http://localhost:3000/uu-fakerepo-maing01/00000000000000000000000000000000/getBinaryData?code=ckIntegrationGetLogs",
+  "asid_license_owner_list": [
+    "14-2710-1",
+    "13-2838-1",
+    "22-9196-1",
+    "3560-3076-6014-0000",
+    "235-9445-1"
+  ],
+  "trustedSubApp" : []
+}

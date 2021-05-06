@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1.0,
+  "code": "uu-schoolkit-schoolg01",
+  "name": "uuSchoolKit",
+  "desc": "Application uuSchoolKit",
+  "version": "0.19.6",
+
+  "defaultIcon": "uubml-university",
+  "defaultCategory": "control",
+  "stateList": [
+    {
+      "code": "initial",
+      "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language='en'>Initial</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language='cs'>Počáteční</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+      "icon": "uubml-state-s00-initial",
+      "ancestorStateMap": {
+        "uu-businessterritory-maing01/uuAwsc": "initial"
+      }
+    },
+    {
+      "code": "active",
+      "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language='en'>Active</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language='cs'>Aktivní</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+      "ancestorStateMap": {
+        "uu-businessterritory-maing01/uuAwsc": "active"
+      },
+      "icon": "uubml-state-s00-active"
+    },
+    {
+      "code": "warning",
+      "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language='en'>Warning</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language='cs'>Varování</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+      "ancestorStateMap": {
+        "uu-businessterritory-maing01/uuAwsc": "warning"
+      },
+      "icon": "uubml-state-s53-alternative-active"
+    },
+    {
+      "code": "problem",
+      "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language='en'>Problem</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language='cs'>Problém</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+      "ancestorStateMap": {
+        "uu-businessterritory-maing01/uuAwsc": "problem"
+      },
+      "icon": "uubml-state-s34-problem"
+    },
+    {
+      "code": "passive",
+      "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language='en'>Passive</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language='cs'>Pozastavený</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+      "ancestorStateMap": {
+        "uu-businessterritory-maing01/uuAwsc": "passive"
+      },
+      "icon": "uubml-state-s00-passive"
+    },
+    {
+      "code": "closed",
+      "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language='en'>Closed</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language='cs'>Uzavřený</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+      "ancestorStateMap": {
+        "uu-businessterritory-maing01/uuAwsc": "final"
+      },
+      "icon": "uubml-state-s25-final"
+    }
+  ],
+
+  "profileList": [
+    {
+      "code": "Authorities",
+      "name": "Authorities",
+      "desc": "Authorities"
+    },
+    {
+      "code": "Executives",
+      "name": "Executives",
+      "desc": "Executives"
+    },
+    {
+      "code": "StandardUsers",
+      "name": "Standard users",
+      "desc": "Standard users"
+    },
+    {
+      "code": "Auditors",
+      "name": "Auditors",
+      "desc": "Auditors"
+    }
+  ],
+
+  "defaultPermissionMatrix": [
+    "10000000-00000000-00000000-00001000",
+    "01100000-00000000-00000000-00000000",
+    "00000000-00000000-00000000-00000000",
+    "00000000-00000000-00000000-00000010"
+  ],
+
+  "ancestorPathList": [
+    "uu-businessterritory-maing01/uuAwsc"
+  ],
+
+  "ancestorMap": {
+    "uu-businessterritory-maing01/uuAwsc": {
+      "interfaceUuCmdMap": {
+        "uu-businessterritory-maing01/uuAwsc/get": "uuSchoolKit/get",
+        "uu-businessterritory-maing01/uuAwsc/load": "uuSchoolKit/load",
+        "uu-businessterritory-maing01/uuAwsc/setBasicAttributes": "uuSchoolKit/update",
+        "uu-businessterritory-maing01/uuAwsc/setState": "uuSchoolKit/setState"
+      }
+    }
+  },
+
+  "synchronizeUuCmdMap": {
+    "uu-businessterritory-maing01/uuAwsc/synchronizeArtifactAttributes": "uuSchoolKit/get"
+  },
+
+
+  "useCaseProfileMap": {
+    "uuSchoolKit/get": "11110000-00000000-00000000-00000000",
+    "uuSchoolKit/load": "11110000-00000000-00000000-00000000",
+    "uuSchoolKit/update": "11000000-00000000-00000000-00000000",
+    "uuSchoolKit/setState": "11000000-00000000-00000000-00000000",
+
+    "uuSchoolKit/sys/uuAppWorkspace/productInfo/set": "11000000-00000000-00000000-00000000",
+    "uuSchoolKit/setProductInfo": "11000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/uuAppWorkspace/productLogo/set": "11000000-00000000-00000000-00000000",
+    "uuSchoolKit/setProductLogo": "11000000-00000000-00000000-00000000",
+
+    "uuSchoolKit/sys/connectArtifact": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/setAuthType": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/getAppWorkspace": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/setProfile": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/getProfile": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/listProfiles": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/createPermission": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/listPermissions": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/deletePermission": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/getLicenseOwner": "11010000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/setAppWorkspaceConfig": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/getAppWorkspaceConfig": "11010000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/clearAppWorkspaceConfig": "11010000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/calculateDataStoreStats": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/getDataStoreStats": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/setAwidRuntimeMode": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/getAwidRuntimeMode": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/awidDump": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/awidRestore": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/appClientToken/initKeys": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/listAuditLogRecordsByTimeAndSpp": "10000000-00000000-00000000-00000000",
+    "uuSchoolKit/sys/listMyAuditLogRecordsByTime": "11110000-00000000-00000000-00000000",
+    "uuSchoolKit/uu-app-binarystore/createBinary": "11000000-00000000-00000000-00000000",
+    "uuSchoolKit/uu-app-binarystore/getBinaryData": "11010000-00000000-00000000-00000000",
+    "uuSchoolKit/uu-app-binarystore/updateBinaryData": "11000000-00000000-00000000-00000000",
+    "uuSchoolKit/uu-app-binarystore/getBinary": "11010000-00000000-00000000-00000000",
+    "uuSchoolKit/uu-app-binarystore/updateBinary": "11000000-00000000-00000000-00000000",
+    "uuSchoolKit/uu-app-binarystore/deleteBinary": "11000000-00000000-00000000-00000000",
+    "uuSchoolKit/uu-app-binarystore/listBinaries": "11010000-00000000-00000000-00000000",
+    "uuSchoolKit/uu-app-binarystore/getBinaryVersion": "11010000-00000000-00000000-00000000",
+    "uuSchoolKit/uu-app-binarystore/updateBinaryVersion": "11000000-00000000-00000000-00000000",
+    "uuSchoolKit/uu-app-binarystore/getBinaryVersionData": "11010000-00000000-00000000-00000000",
+    "uuSchoolKit/uu-app-binarystore/deleteBinaryVersion": "11000000-00000000-00000000-00000000",
+    "uuSchoolKit/uu-app-binarystore/listBinaryVersions": "11010000-00000000-00000000-00000000",
+
+    "uu-businessterritory-maing01/uuAwsc/get": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/load": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/loadEnvironment": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/loadPermissions": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/loadNavigation": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/loadWithStateHistoryData": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/authorizeMe": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/authorizeUuIdentity": "11000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/authorizeRoleGroupIfc": "11000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/authorizeRoleIfcList": "11000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/setBasicAttributes": "11000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/setResponsibleRole": "10000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/setHomeFolder": "10000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/setImplicitPermissions": "10000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/addExplicitPermission": "11000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/removeExplicitPermission": "11000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/getExplicitPermissions": "11000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/setState": "10000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/setPermissions": "10000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/delete": "10000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/checkIntegrityRules": "11000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/connectAppWorkspace": "10000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/getImplicitPermissions": "10000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/setVersion": "10000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/getNavigation": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/find": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/listStateHistory": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/loadLifeCycle": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/listActivities": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/listMyRoles": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/checkConsistency": "11110000-00000000-00000000-00000000",
+
+    "uu-businessterritory-maing01/uuAwsc/activity/create": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/load": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/setBasicAttributes": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/setTypeSpecificData": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/setSubmitter": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/addSolver": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/removeSolver": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/reactivateSolver": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/elementary/setSolver": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/addNote": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/elementary/addNote": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/setNoteImportance": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/removeNote": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/propagateReadToDw": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/createNote": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/setState": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/elementary/createNote": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/activity/elementary/setState": "11110000-00000000-00000000-00000000",
+
+    "uu-businessterritory-maing01/uuAwsc/aar/create": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/aar/get": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/aar/update": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/aar/delete": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/aar/listByArtifactA": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/aar/listByArtifactB": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/aar/createMirror": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/aar/updateMirror": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/aar/deleteMirror": "11110000-00000000-00000000-00000000",
+
+    "uu-businessterritory-maing01/uuAwsc/contextProperty/create": "10000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/contextProperty/setBasicAttributes": "10000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/contextProperty/get": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/contextProperty/listByArtifact": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/contextProperty/load": "11110000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/contextProperty/delete": "10000000-00000000-00000000-00000000",
+    "uu-businessterritory-maing01/uuAwsc/contextProperty/setValue": "10000000-00000000-00000000-00000000"
+  },
+
+  "routeMap": {
+    "userGate/activityDetail": ["userGate/activityDetail", "UuTerritory.Activity.Routes.Detail"],
+    "userGate/activityList": ["userGate/activityList", "UuTerritory.Activity.Routes.ActivityList"]
+  },
+
+  "uuAarMap": {
+  },
+
+  "organizationalContextPropertyMap": {
+  },
+
+  "activityTypeMap": {
+    "info": {
+      "baseType": "info",
+      "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Info</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Info</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+      "desc": null,
+      "icon": "uubml-notice",
+      "bound": false,
+      "maxSolverCount": 100,
+      "createComponentTag": "UuTerritory.Activity.Core.CreateInfoActivity",
+      "dwRecordTileTag": "UuTerritory.Activity.Dw.Info",
+      "tileComponentTag": "UuTerritory.Activity.Core.ActivityTileInfo",
+      "activityDetailTag": "UuTerritory.Activity.Core.DetailInfo",
+      "activityProfileMap": {
+        "Submitter": {
+          "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Zadavatel</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Submitter</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+          "desc": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Zadavatel aktivity.</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Submitter of the activity.</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>"
+        },
+        "Solver": {
+          "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Řešitel</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Solver</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+          "desc": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Řešitel aktivity.</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Solver of the activity.</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>"
+        }
+      },
+      "contextProfileMap": {
+        "Supervisor": {
+          "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Supervisor</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Supervisor</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+          "desc": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Uživatelé, kteří mají právo na profil Authorities na artefaktu aktivity.</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Users who have permission on profile Authorities of the activity artifact.</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+          "permissionMask": "10000000000000000000000000000000"
+        },
+        "Interested": {
+          "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Interested</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Interested</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+          "desc": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Uživatelé, kteří mají právo na jakýkoliv profil na artefaktu aktivity.</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Users who have permission on any profile of the activity artifact.</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+          "permissionMask": "01111111111111111111111111111111"
+        }
+      },
+      "stateMap": {
+        "initial": {
+          "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Počáteční</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Initial</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+          "type": "INITIAL",
+          "icon": "uubml-state-s00-initial",
+          "allowedProfileList": [
+            "Submitter"
+          ],
+          "allowedStateProgressList": [
+            "active",
+            "warning",
+            "problem",
+            "cancelled"
+          ]
+        },
+        "active": {
+          "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Ok</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Ok</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+          "type": "ACTIVE",
+          "icon": "uubml-state-s00-active",
+          "allowedProfileList": [
+            "Submitter"
+          ],
+          "allowedStateProgressList": [
+            "warning",
+            "problem",
+            "closed",
+            "notSolved",
+            "closedBySystem",
+            "cancelled"
+          ]
+        },
+        "warning": {
+          "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Upozornění</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Warning</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+          "type": "ALTERNATIVE_ACTIVE",
+          "icon": "uubml-state-s53-alternative-active",
+          "allowedProfileList": [
+            "Submitter"
+          ],
+          "allowedStateProgressList": [
+            "active",
+            "problem",
+            "closed",
+            "notSolved",
+            "closedBySystem",
+            "cancelled"
+          ]
+        },
+        "problem": {
+          "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Problém</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Problem</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+          "type": "PROBLEM_ACTIVE",
+          "icon": "uubml-state-s34-problem",
+          "allowedProfileList": [
+            "Submitter"
+          ],
+          "allowedStateProgressList": [
+            "active",
+            "warning",
+            "closed",
+            "notSolved",
+            "closedBySystem",
+            "cancelled"
+          ]
+        },
+        "closed": {
+          "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Uzavřeno</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Closed</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+          "type": "FINAL",
+          "icon": "uubml-state-s25-final",
+          "allowedProfileList": [
+            "Submitter"
+          ],
+          "allowedStateProgressList": []
+        },
+        "closedBySystem": {
+          "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Uzavřeno systémem</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Closed by system</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+          "type": "ALTERNATIVE_FINAL",
+          "icon": "uubml-state-s25-alternative-final",
+          "allowedProfileList": [],
+          "allowedStateProgressList": []
+        },
+        "cancelled": {
+          "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Zrušeno</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Cancelled</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+          "type": "CANCELLED",
+          "icon": "uubml-state-s27-cancelled",
+          "allowedProfileList": [
+            "Submitter"
+          ],
+          "allowedStateProgressList": []
+        }
+      },
+      "elementaryActivityMap": {
+        "info": {
+          "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Info</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Info</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+          "desc": null,
+          "icon": "uubml-message-2",
+          "stateMap": {
+            "initial": {
+              "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Přijmi</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Accept</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+              "type": "INITIAL",
+              "icon": "uubml-state-s00-initial",
+              "allowedProfileList": [
+                "Submitter"
+              ],
+              "allowedStateProgressList": [
+                "accepted",
+                "rejected",
+                "warning",
+                "problem",
+                "closed",
+                "solved",
+                "unknown",
+                "notSolved"
+              ]
+            },
+            "accepted": {
+              "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Přijímám</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">I accept</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+              "type": "ACTIVE",
+              "icon": "uubml-state-s10-active",
+              "allowedProfileList": [
+                "Solver"
+              ],
+              "allowedStateProgressList": [
+                "rejected",
+                "okActive",
+                "warning",
+                "problem",
+                "closed",
+                "solved",
+                "unknown",
+                "notSolved"
+              ]
+            },
+            "rejected": {
+              "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Odmítám</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">I reject</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+              "type": "PROBLEM_ACTIVE",
+              "icon": "uubml-state-s35-problem",
+              "pending": true,
+              "allowedProfileList": [
+                "Solver"
+              ],
+              "allowedStateProgressList": [
+                "accepted",
+                "warning",
+                "problem",
+                "closed",
+                "solved",
+                "unknown",
+                "notSolved"
+              ]
+            },
+            "okActive": {
+              "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Ok</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Ok</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+              "type": "ACTIVE",
+              "icon": "uubml-state-s00-active",
+              "allowedProfileList": [
+                "Submitter", "Solver"
+              ],
+              "allowedStateProgressList": [
+                "rejected",
+                "warning",
+                "problem",
+                "closed",
+                "solved",
+                "unknown",
+                "notSolved"
+              ]
+            },
+            "warning": {
+              "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Upozornění</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Warning</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+              "type": "ALTERNATIVE_ACTIVE",
+              "icon": "uubml-state-s53-alternative-active",
+              "allowedProfileList": [
+                "Submitter", "Solver"
+              ],
+              "allowedStateProgressList": [
+                "accepted",
+                "rejected",
+                "okActive",
+                "problem",
+                "closed",
+                "solved",
+                "unknown",
+                "notSolved"
+              ]
+            },
+            "problem": {
+              "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Problém</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Problem</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+              "type": "PROBLEM_ACTIVE",
+              "icon": "uubml-state-s34-problem",
+              "allowedProfileList": [
+                "Submitter", "Solver"
+              ],
+              "allowedStateProgressList": [
+                "accepted",
+                "rejected",
+                "okActive",
+                "warning",
+                "closed",
+                "solved",
+                "unknown",
+                "notSolved"
+              ]
+            },
+            "reactivated": {
+              "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Přijmi</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Accept</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+              "type": "ALTERNATIVE_ACTIVE",
+              "icon": "uubml-state-s34-alternative-active",
+              "allowedProfileList": [
+                "Submitter"
+              ],
+              "allowedStateProgressList": [
+                "accepted",
+                "rejected",
+                "okActive",
+                "warning",
+                "problem",
+                "closed",
+                "solved",
+                "unknown",
+                "notSolved"
+              ]
+            },
+            "closed": {
+              "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Uzavřeno</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Closed</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+              "type": "CANCELLED",
+              "icon": "uubml-state-s27-cancelled",
+              "allowedProfileList": [
+                "Submitter"
+              ],
+              "allowedStateProgressList": [
+                "reactivated"
+              ]
+            },
+            "solved": {
+              "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Přečetl jsem</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Acknowledged</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+              "type": "FINAL",
+              "icon": "uubml-state-s25-final",
+              "allowedProfileList": [
+                "Solver"
+              ],
+              "allowedStateProgressList": []
+            },
+            "unknown": {
+              "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Nevím</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Unknown</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+              "type": "ALTERNATIVE_FINAL",
+              "icon": "uubml-state-s33-alternative-final",
+              "allowedProfileList": [
+                "Submitter"
+              ],
+              "allowedStateProgressList": []
+            },
+            "notSolved": {
+              "name": "<uu5string/><UU5.Bricks.Lsi><UU5.Bricks.Lsi.Item language=\"cs\">Nezajímá mě</UU5.Bricks.Lsi.Item><UU5.Bricks.Lsi.Item language=\"en\">Not acknowledged</UU5.Bricks.Lsi.Item></UU5.Bricks.Lsi>",
+              "type": "ALTERNATIVE_FINAL",
+              "icon": "uubml-state-s27-alternative-final",
+              "allowedProfileList": [
+                "Solver"
+              ],
+              "allowedStateProgressList": []
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}

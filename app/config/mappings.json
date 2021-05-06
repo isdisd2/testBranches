@@ -1,0 +1,498 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "studentGate": {
+        "realization": "student-gate.html",
+        "httpMethod": "GET",
+        "path": [
+          "studentGate",
+          "studentGate(/*)"
+        ],
+        "type": "UVE"
+      },
+      "teacherGate": {
+        "realization": "teacher-gate.html",
+        "httpMethod": "GET",
+        "path": [
+          "teacherGate",
+          "teacherGate(/*)"
+        ],
+        "type": "UVE"
+      },
+      "relatedPersonGate": {
+        "realization": "related-person-gate.html",
+        "httpMethod": "GET",
+        "path": [
+          "relatedPersonGate",
+          "relatedPersonGate(/*)"
+        ],
+        "type": "UVE"
+      },
+      "defaultUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "uuSchoolKit/get": {
+        "realization": "api/controllers/SchoolkitMainController.get",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "uuSchoolKit/load": {
+        "realization": "api/controllers/SchoolkitMainController.load",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "uuSchoolKit/update": {
+        "realization": "api/controllers/SchoolkitMainController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "uuSchoolKit/setState": {
+        "realization": "api/controllers/SchoolkitMainController.setState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "schoolYear/create": {
+        "realization": "api/controllers/SchoolYearController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "schoolYear/get": {
+        "realization": "api/controllers/SchoolYearController.get",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "schoolYear/load": {
+        "realization": "api/controllers/SchoolYearController.load",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "schoolYear/list": {
+        "realization": "api/controllers/SchoolYearController.list",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "schoolYear/update": {
+        "realization": "api/controllers/SchoolYearController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "schoolYear/setState": {
+        "realization": "api/controllers/SchoolYearController.setState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "schoolYear/setFinalState": {
+        "realization": "api/controllers/SchoolYearController.setFinalState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "schoolYear/delete": {
+        "realization": "api/controllers/SchoolYearController.delete",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "class/create": {
+        "realization": "api/controllers/ClassController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "class/update": {
+        "realization": "api/controllers/ClassController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "class/updateByClassTeacher": {
+        "realization": "api/controllers/ClassController.updateByClassTeacher",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "class/addStudents": {
+        "realization": "api/controllers/ClassController.addStudents",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "class/removeStudent": {
+        "realization": "api/controllers/ClassController.removeStudent",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "class/listBySchoolYear": {
+        "realization": "api/controllers/ClassController.listBySchoolYear",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "class/listByTeacher": {
+        "realization": "api/controllers/ClassController.listByTeacher",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "class/listByStudent": {
+        "realization": "api/controllers/ClassController.listByStudent",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "class/load": {
+        "realization": "api/controllers/ClassController.load",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "class/get": {
+        "realization": "api/controllers/ClassController.get",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "class/delete": {
+        "realization": "api/controllers/ClassController.delete",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "class/setState": {
+        "realization": "api/controllers/ClassController.setState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "class/setFinalState": {
+        "realization": "api/controllers/ClassController.setFinalState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "subject/create": {
+        "realization": "api/controllers/SubjectController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "subject/load": {
+        "realization": "api/controllers/SubjectController.load",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "subject/update": {
+        "realization": "api/controllers/SubjectController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "subject/updateBySubjectTeacher": {
+        "realization": "api/controllers/SubjectController.updateBySubjectTeacher",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "subject/addStudents": {
+        "realization": "api/controllers/SubjectController.addStudents",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "subject/removeStudent": {
+        "realization": "api/controllers/SubjectController.removeStudent",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "subject/delete": {
+        "realization": "api/controllers/SubjectController.delete",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "subject/get": {
+        "realization": "api/controllers/SubjectController.get",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "subject/listByTeacher": {
+        "realization": "api/controllers/SubjectController.listByTeacher",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "subject/listByClass": {
+        "realization": "api/controllers/SubjectController.listByClass",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "subject/listByStudent": {
+        "realization": "api/controllers/SubjectController.listByStudent",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "subject/setState": {
+        "realization": "api/controllers/SubjectController.setState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "subject/setFinalState": {
+        "realization": "api/controllers/SubjectController.setFinalState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "teacher/create": {
+        "realization": "api/controllers/TeacherController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "teacher/get": {
+        "realization": "api/controllers/TeacherController.get",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "teacher/load": {
+        "realization": "api/controllers/TeacherController.load",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "teacher/update": {
+        "realization": "api/controllers/TeacherController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "teacher/setState": {
+        "realization": "api/controllers/TeacherController.setState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "teacher/setFinalState": {
+        "realization": "api/controllers/TeacherController.setFinalState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "relatedPerson/create": {
+        "realization": "api/controllers/RelatedPersonController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "relatedPerson/load": {
+        "realization": "api/controllers/RelatedPersonController.load",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "relatedPerson/get": {
+        "realization": "api/controllers/RelatedPersonController.get",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "relatedPerson/list": {
+        "realization": "api/controllers/RelatedPersonController.list",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "relatedPerson/update": {
+        "realization": "api/controllers/RelatedPersonController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "relatedPerson/updateByRelatedPerson": {
+        "realization": "api/controllers/RelatedPersonController.updateByRelatedPerson",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "relatedPerson/setState": {
+        "realization": "api/controllers/RelatedPersonController.setState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "relatedPerson/setFinalState": {
+        "realization": "api/controllers/RelatedPersonController.setFinalState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "student/create": {
+        "realization": "api/controllers/StudentController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "student/load": {
+        "realization": "api/controllers/StudentController.load",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "student/list": {
+        "realization": "api/controllers/StudentController.list",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "student/listByRelatedPerson": {
+        "realization": "api/controllers/StudentController.listByRelatedPerson",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "student/setState": {
+        "realization": "api/controllers/StudentController.setState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "student/update": {
+        "realization": "api/controllers/StudentController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "student/updateByRelatedPerson": {
+        "realization": "api/controllers/StudentController.updateByRelatedPerson",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "student/setEvaluation": {
+        "realization": "api/controllers/StudentController.setEvaluation",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "student/setNickname": {
+        "realization": "api/controllers/StudentController.setNickname",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "student/get": {
+        "realization": "api/controllers/StudentController.get",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "student/setFinalState": {
+        "realization": "api/controllers/StudentController.setFinalState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "student/addRelatedPersons": {
+        "realization": "api/controllers/StudentController.addRelatedPersons",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "student/removeRelatedPerson": {
+        "realization": "api/controllers/StudentController.removeRelatedPerson",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "teacher/list": {
+        "realization": "api/controllers/TeacherController.list",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "uuSchoolKit/migrate": {
+        "realization": "api/controllers/MigrateController.migrate",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "student/updateRelationType": {
+        "realization": "api/controllers/StudentController.updateRelationType",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "student/updateNote": {
+        "realization": "api/controllers/StudentController.updateNote",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "uuSchoolKit/updateIndexes": {
+        "realization": "api/controllers/MigrateController.updateIndexes",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "uuSchoolKit/deleteAwsc": {
+        "realization": "api/controllers/MigrateController.deleteAwsc",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "uuSchoolKit/dropAwid": {
+        "realization": "api/controllers/MigrateController.dropAwid",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "student/setRelatedPerson": {
+        "realization": "api/controllers/StudentController.setRelatedPerson",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/init": {
+        "realization": "api/controllers/SchoolkitMainController.init",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "subject/addStudentCourse": {
+        "realization": "api/controllers/SubjectController.addStudentCourse",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "subject/addCourse": {
+        "realization": "api/controllers/SubjectController.addCourse",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "subject/removeCourse": {
+        "realization": "api/controllers/SubjectController.removeCourse",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "subject/removeStudentCourse": {
+        "realization": "api/controllers/SubjectController.removeStudentCourse",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "class/updateNumberInClass": {
+        "realization": "api/controllers/ClassController.updateNumberInClass",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "assignment/create": {
+        "realization": "api/controllers/AssignmentController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "assignment/load": {
+        "realization": "api/controllers/AssignmentController.load",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "assignment/addTask": {
+        "realization": "api/controllers/AssignmentController.addTask",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "assignment/updateTask": {
+        "realization": "api/controllers/AssignmentController.updateTask",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "assignment/removeTask": {
+        "realization": "api/controllers/AssignmentController.removeTask",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "assignment/get": {
+        "realization": "api/controllers/AssignmentController.get",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "assignment/list": {
+        "realization": "api/controllers/AssignmentController.list",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "assignment/update": {
+        "realization": "api/controllers/AssignmentController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "assignment/setFinalState": {
+        "realization": "api/controllers/AssignmentController.setFinalState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "assignment/setState": {
+        "realization": "api/controllers/AssignmentController.setState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "assignment/addStudents": {
+        "realization": "api/controllers/AssignmentController.addStudents",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "assignment/removeStudent": {
+        "realization": "api/controllers/AssignmentController.removeStudent",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "assignment/getLogs": {
+        "realization": "api/controllers/AssignmentController.getLogs",
+        "httpMethod": "GET",
+        "type": "CMD"
+      }
+    }
+  }
+}
