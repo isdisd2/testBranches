@@ -16,7 +16,6 @@
   "uuScriptGetAssignmentsLogs": "http://localhost:3000/uu-fakerepo-maing01/00000000000000000000000000000000/getBinaryData?code=ckIntegrationGetLogs",
   "asid_license_owner_list": [
     "14-2710-1",
-    "13-2838-1",
     "235-9445-1"
   ],
   "trustedSubApp" : []
