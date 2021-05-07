@@ -1,0 +1,8 @@
+diff a/env/development.json b/env/development.json	(rejected hunks)
+@@ -21,4 +21,6 @@
+ 
+     develop2222
+     dev3333
++
++    feature 1
+ }
