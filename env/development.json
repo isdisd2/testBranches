@@ -15,13 +15,7 @@
   "uuScriptUpdateRelatedPersonInCourse": "http://localhost:3000/uu-fakerepo-maing01/00000000000000000000000000000000/getBinaryData?code=ckUpdateRelatedPerson",
   "uuScriptGetAssignmentsLogs": "http://localhost:3000/uu-fakerepo-maing01/00000000000000000000000000000000/getBinaryData?code=ckIntegrationGetLogs",
   "asid_license_owner_list": [
-    "235-9445-1",
-    "22-22",
-    "111"
-    "333",
-    "555"
-    "444"
-    "666"
-  ],
+    "235-9445-1"
+    ],
   "trustedSubApp" : []
 }
